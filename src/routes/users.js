@@ -5,7 +5,7 @@ import { createUser, deleteUser, getAllUsers, singleUser, updateUser } from "../
 const userRoutes=express.Router();
 
 userRoutes.get("/getAllUsers",getAllUsers);
-userRoutes.post("/createUser",createUser);
+userRoutes.post("/createSystemUser",createUser);
 userRoutes.get("/getSingleUser/:id",singleUser);
 userRoutes.put("/updateUser/:id",updateUser);
 userRoutes.delete("/deleteUser/:id",deleteUser);

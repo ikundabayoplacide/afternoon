@@ -35,7 +35,7 @@ export const createUser=async(req,res)=>{
         }
         const hashPassword=await bcrypt.hash(password,10);
         const user=await User.create({...userData,password:hashPassword});
-        res.status(201).json({message:"User account created succ"});
+        res.status(201).json({message:`User account created succ ${user}`});
     } catch (error) {
         res.status(500).json({error:error.message});
     }
