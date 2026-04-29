@@ -26,5 +26,5 @@ export const seedProduct=async()=>{
     image:"",
     status:"available"
     }]
-    await Product.bulkCreate(products);
+    await Product.bulkCreate(products, { ignoreDuplicates: true });
 }

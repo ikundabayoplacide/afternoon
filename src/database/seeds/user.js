@@ -40,8 +40,8 @@ export const seedUsers = async () => {
         type:"delivery"
       },
       {
-        fullName: "ston",
-        email: "ston@gmail.com",
+        fullName: "admin",
+        email: "admin@gmail.com",
         phoneNumber: "0781232233",
         location: "Musanze",
         gender: "male",

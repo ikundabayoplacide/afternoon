@@ -9,7 +9,7 @@ const runSeed = async() =>{
         console.log("seeds data inserted successfully");
         process.exit(0)
     }
-    catch (erro){
+    catch (error){
         console.error("failed to seed users", error)
     }
 };

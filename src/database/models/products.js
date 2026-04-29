@@ -40,7 +40,7 @@ Product.init({
     },
     forShop:{
         type:DataTypes.UUID,
-        allowNull:false
+        allowNull:true
     }
 },
     {
