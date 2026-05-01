@@ -8,7 +8,7 @@ import { swaggerDocs } from "./src/doc/swagger.js";
 const app=express();
 const PORT=process.env.PORT||8000;
 
-app.use(cors({ origin: ["http://localhost:5173", "https://afternoonmember.vercel.app"] }));
+app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json())
 app.use("/api",userRoutes);
 app.use("/api",authRoutes);
