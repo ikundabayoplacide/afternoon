@@ -5,7 +5,7 @@ import authorize from "../middleware/authorize.js";
 
 const userRoutes=express.Router();
 
-userRoutes.get("/getAllUsers", protect, authorize("admin", "seller"),getAllUsers);
+userRoutes.get("/getAllUsers",getAllUsers);
 userRoutes.post("/createSystemUser", protect, authorize("admin"), createUser);
 userRoutes.get("/getSingleUser/:id", protect, authorize("admin", "seller"), singleUser);
 userRoutes.put("/updateUser/:id", protect, authorize("admin"), updateUser);
